@@ -1,0 +1,71 @@
+.talks-list {
+    max-width: 800px;
+    margin: 2rem auto;
+    color: var(--project-text-color);
+}
+
+.talk-item {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 20px;
+    padding: 1.5rem 0;
+}
+
+.talk-date {
+    color: var(--project-secondary-color);
+    font-size: 0.9em;
+    padding-top: 3px;
+}
+
+.talk-title {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.2em;
+    color: var(--link-color);
+}
+
+.talk-role {
+    color: var(--project-secondary-color);
+    font-weight: normal;
+    font-size: 0.9em;
+    margin-left: 0.5em;
+}
+
+.talk-meta {
+    margin-bottom: 0.5rem;
+    font-size: 0.9em;
+    color: var(--project-secondary-color);
+
+    span {
+        display: inline-block;
+        margin-right: 1em;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.talk-description {
+    margin: 0.5rem 0 1rem 0;
+    color: var(--project-text-color);
+    line-height: 1.5;
+}
+
+.talk-divider {
+    border-bottom: 1px dashed var(--project-divider-color);
+    margin: 0 0 0 170px;
+}
+
+@media (max-width: 600px) {
+    .talk-item {
+        grid-template-columns: 1fr;
+    }
+
+    .talk-date {
+        margin-bottom: 0.5rem;
+    }
+
+    .talk-divider {
+        margin-left: 0;
+    }
+}

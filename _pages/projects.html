@@ -1,0 +1,130 @@
+---
+layout: single
+title: "Projects"
+permalink: /projects/
+author_profile: true
+projects:
+  - title: "Tryout Online Platform"
+    client: "Salemba Group Tutoring Instituion, Indonesia"
+    start_date: 2024-11-01
+    end_date: 2025-02-01
+    description: "Developed a web-based tryout and analytics platform for educational assessments."
+    tech_stack: ["Next.js", "FilamentPHP", "MySQL"]
+
+  - title: "Stock Opname App"
+    client: "SSR Polytechnic Multimedia, Technology and Tourism Campus, Indonesia"
+    start_date: 2023-10-01
+    end_date: 2023-12-01
+    description: "Built an Android app using NFC technology for inventory stock-taking in educational settings."
+    tech_stack: ["Android Studio", "Kotlin", "SQLite", "NFC"]
+
+  - title: "Emotion Understanding from Video"
+    client: "Faculty of Computer Science, University of Indonesia"
+    start_date: 2022-11-01
+    end_date: 2023-02-01
+    description: "Developed a Python-based application to analyze emotional expression using Video Swin Transformer."
+    tech_stack: ["Python", "PyTorch", "Video Swin Transformer"]
+
+  - title: "Hemofilia Mobile App"
+    client: "The Indonesian Hemophilia Community (HMHI)"
+    start_date: 2022-03-01
+    end_date: 2022-06-01
+    description: "Created a mobile app and admin panel for patient data logging and monitoring."
+    tech_stack: ["Flutter", "Laravel", "Firebase", "MySQL"]
+
+  - title: "Indosat COPORTAL"
+    client: "PT. Indosat Ooredoo, Indonesia"
+    start_date: 2022-01-01
+    end_date: 2022-12-01
+    description: "Built a unified portal for managing and visualizing customer operation data."
+    tech_stack: ["Laravel", "MySQL", "Bootstrap"]
+
+  - title: "Sahabat Donor App"
+    client: "Indonesian Red Cross (PMI) Chapter Tangerang"
+    start_date: 2021-09-01
+    end_date: 2021-12-01
+    description: "Developed a blood donation scheduling app with admin backend."
+    tech_stack: ["Flutter", "Laravel", "MySQL"]
+
+  - title: "SIKD Core"
+    client: "Ministry of Finance of the Republic of Indonesia"
+    start_date: 2021-03-01
+    end_date: 2021-08-01
+    description: "Helped build a financial system core module for regional budget tracking."
+    tech_stack: ["Java", "Spring Boot", "PostgreSQL"]
+
+  - title: "Hemophilia Congress Web App"
+    client: "The Indonesian Hemophilia Community (HMHI)"
+    start_date: 2020-09-01
+    end_date: 2021-03-01
+    description: "Developed event registration and schedule management web app for medical congress."
+    tech_stack: ["Laravel", "MySQL", "Bootstrap"]
+
+  - title: "SIPBM ATS"
+    client: "Ministry of Village, Development of Disadvantaged Regions of the Republic of Indonesia"
+    start_date: 2021-02-01
+    end_date: 2021-04-01
+    description: "Data collection system to identify school dropouts and at-risk children."
+    tech_stack: ["PHP", "Laravel", "MySQL", "Android Studio"]
+
+  - title: "Learning Management System"
+    client: "BISA Learning Center, Indonesia"
+    start_date: 2020-02-01
+    end_date: 2020-04-01
+    description: "Developed a learning platform for registration, payment, and course tracking."
+    tech_stack: ["Android Studio", "Kotlin", "Laravel", "MySQL"]
+
+  - title: "Goib Ambulance App"
+    client: "Dompet Dhuafa Indonesia"
+    start_date: 2019-11-01
+    end_date: 2020-02-01
+    description: "Created an ambulance ordering and tracking Android app."
+    tech_stack: ["Android Studio", "Kotlin", "Laravel", "MySQL"]
+
+  - title: "Tryout Online App"
+    client: "PT. Bintang Pelajar, Indonesia"
+    start_date: 2019-10-01
+    end_date: 2019-12-01
+    description: "Developed an Android and web-based tryout platform for student assessment."
+    tech_stack: ["Android Studio", "Kotlin", "Laravel", "MySQL"]
+
+  - title: "CRM Web Application"
+    client: "PT. Cipta Krida Bahari, Indonesia"
+    start_date: 2018-08-01
+    end_date: 2018-12-01
+    description: "Created a CRM (Customer Relationship Management) system to manage client relations and lead tracking."
+    tech_stack: ["Laravel", "MySQL", "Bootstrap"]
+---
+
+{% include base_path %}
+
+<div class="projects-list">
+  {% for project in page.projects %}
+  <div class="project-item">
+    <div class="project-period">
+      {{ project.start_date | date: "%b %Y" }} – 
+      {{ project.end_date | date: "%b %Y" }}
+    </div>
+    <div class="project-details">
+      <h3 class="project-title">
+        {{ project.title }}
+        {% if project.client %}
+        <span class="project-client">for {{ project.client }}</span>
+        {% endif %}
+      </h3>
+      
+      <p class="project-description">{{ project.description }}</p>
+      
+      <div class="project-tech">
+        {% for tech in project.tech_stack %}
+        <span class="tech-badge">{{ tech }}</span>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  
+  {% unless forloop.last %}
+  <div class="project-divider"></div>
+  {% endunless %}
+  {% endfor %}
+</div>

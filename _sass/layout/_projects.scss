@@ -1,0 +1,105 @@
+:root {
+    /* Light theme defaults */
+    --project-text-color: #333;
+    --project-secondary-color: #666;
+    --project-bg-color: #fff;
+    --project-divider-color: #999;
+    --tech-badge-bg: #f0f0f0;
+    --tech-badge-color: #555;
+    --link-color: #2c3e50;
+    --link-hover-color: #1a73e8;
+}
+
+[data-theme="dark"] {
+    --project-text-color: #e0e0e0;
+    --project-secondary-color: #aaa;
+    --project-bg-color: #222;
+    --project-divider-color: #fff;
+    --tech-badge-bg: #333;
+    --tech-badge-color: #ddd;
+    --link-color: #4dabf7;
+    --link-hover-color: #74c0fc;
+}
+
+.projects-list {
+    max-width: 800px;
+    margin: 2rem auto;
+    color: var(--project-text-color);
+}
+
+.project-item {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 20px;
+    padding: 1.5rem 0;
+    background-color: var(--global-bg-color);
+}
+
+.project-period {
+    color: var(--project-secondary-color);
+    font-size: 0.9em;
+    padding-top: 3px;
+}
+
+.project-title {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2em;
+
+    a {
+        color: var(--link-color);
+        text-decoration: none;
+        font-weight: 600;
+
+        &:hover {
+            color: var(--link-hover-color);
+        }
+    }
+}
+
+.project-client {
+    color: var(--project-secondary-color);
+    font-weight: normal;
+    font-size: 0.9em;
+    margin-left: 0.5em;
+}
+
+.project-description {
+    margin: 0.5rem 0 1rem 0;
+    color: var(--project-text-color);
+    line-height: 1.5;
+}
+
+.tech-badge {
+    display: inline-block;
+    background-color: var(--tech-badge-bg);
+    color: var(--tech-badge-color);
+    padding: 4px 10px;
+    border-radius: 16px;
+    font-size: 0.8em;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    transition: all 0.2s ease;
+
+    &:hover {
+        filter: brightness(1.2);
+    }
+}
+
+.project-divider {
+    border-bottom: 1px dashed var(--project-divider-color);
+    margin: 0 0 0 170px;
+}
+
+@media (max-width: 600px) {
+    .project-item {
+        grid-template-columns: 1fr;
+    }
+
+    .project-period {
+        margin-bottom: 0.5rem;
+    }
+
+    .project-divider {
+        margin-left: 0;
+    }
+}
