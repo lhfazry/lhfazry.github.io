@@ -1,8 +1,7 @@
-
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" class="no-js">
   <head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
     
 
 <meta charset="utf-8">
@@ -94,23 +93,34 @@
 <!-- start custom head snippets -->
 
 <!-- favicon from https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_academic-progressive.svg -->
-<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png"/>
-<link rel="icon" type="image/svg+xml" href="http://localhost:4000/images/favicon.svg"/>
-<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-32x32.png" sizes="32x32"/>
-<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-192x192.png" sizes="192x192"/>
-<link rel="manifest" href="http://localhost:4000/images/manifest.json"/>
-<link rel="icon" href="/images/favicon.ico"/>
-<meta name="theme-color" content="#ffffff"/>
-<link rel="stylesheet" href="http://localhost:4000/assets/css/academicons.css"/>
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/svg+xml" href="http://localhost:4000/images/favicon.svg">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-192x192.png" sizes="192x192">
+<link rel="manifest" href="http://localhost:4000/images/manifest.json">
+<link rel="icon" href="/images/favicon.ico">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/academicons.css">
 
 
 <!-- Support for MatJax -->
 <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
+<script type="text/javascript" id="MathJax-script">
+    window.MathJax = {
+        tex: {
+            inlineMath: [['\\(', '\\)'], ['$', '$']],
+            displayMath: [['\\[', '\\]'], ['$$', '$$']]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+</script>
 <!-- end custom head snippets -->
-
-  </head>
+  <script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">MathJax.Hub.Config({         tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] }       });</script>
+</head>
 
   <body>
 
@@ -135,6 +145,9 @@
           
             
             <li class="masthead__menu-item"><a href="http://localhost:4000/projects/">Projects</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/year-archive/">Blog Posts</a></li>
           
             
             <li class="masthead__menu-item"><a href="http://localhost:4000/cv/">CV</a></li>
@@ -1146,8 +1159,8 @@
 
 
 <div class="page__footer-copyright">
-  &copy; 2025 Lhuqita Fazry, Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
-  Site last updated 2025-05-11
+  &#169; 2025 Lhuqita Fazry, Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br>
+  Site last updated 2025-05-14
 </div>
 
       </footer>
@@ -1164,4 +1177,3 @@
 
   </body>
 </html>
-

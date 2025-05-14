@@ -333,6 +333,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
+  - jekyll-spaceship
 
 # Mimic GitHub Pages with --safe
 whitelist:

@@ -1,8 +1,7 @@
-
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" class="no-js">
   <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
 
 <meta charset="utf-8">
@@ -94,23 +93,34 @@
 <!-- start custom head snippets -->
 
 <!-- favicon from https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_academic-progressive.svg -->
-<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png"/>
-<link rel="icon" type="image/svg+xml" href="http://localhost:4000/images/favicon.svg"/>
-<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-32x32.png" sizes="32x32"/>
-<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-192x192.png" sizes="192x192"/>
-<link rel="manifest" href="http://localhost:4000/images/manifest.json"/>
-<link rel="icon" href="/images/favicon.ico"/>
-<meta name="theme-color" content="#ffffff"/>
-<link rel="stylesheet" href="http://localhost:4000/assets/css/academicons.css"/>
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/svg+xml" href="http://localhost:4000/images/favicon.svg">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-192x192.png" sizes="192x192">
+<link rel="manifest" href="http://localhost:4000/images/manifest.json">
+<link rel="icon" href="/images/favicon.ico">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/academicons.css">
 
 
 <!-- Support for MatJax -->
 <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
+<script type="text/javascript" id="MathJax-script">
+    window.MathJax = {
+        tex: {
+            inlineMath: [['\\(', '\\)'], ['$', '$']],
+            displayMath: [['\\[', '\\]'], ['$$', '$$']]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+</script>
 <!-- end custom head snippets -->
-
-  </head>
+  <script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">MathJax.Hub.Config({         tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] }       });</script>
+</head>
 
   <body>
 
@@ -135,6 +145,9 @@
           
             
             <li class="masthead__menu-item"><a href="http://localhost:4000/projects/">Projects</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/year-archive/">Blog Posts</a></li>
           
             
             <li class="masthead__menu-item"><a href="http://localhost:4000/cv/">CV</a></li>
@@ -308,7 +321,7 @@
   </li>
   <li>Academic Pages uses <a href="https://jekyllrb.com/docs/configuration/markdown/">Jekyll Kramdown</a>, GitHub Flavored Markdown (GFM) parser, which is similar to the version of Markdown used on GitHub, but may have some minor differences.
     <ul>
-      <li>Some of emoji supported on GitHub should be supposed via the <a href="https://github.com/jekyll/jemoji">Jemoji</a> plugin <img class="emoji" title=":computer:" alt=":computer:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4bb.png" height="20" width="20">.</li>
+      <li>Some of emoji supported on GitHub should be supposed via the <a href="https://github.com/jekyll/jemoji">Jemoji</a> plugin <img class="emoji" title="&lt;image class=" emoji alt="💻" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4bb.png?v8" style="vertical-align: middle;             max-width: 1em; visibility: hidden;" onload="this.style.visibility='visible'" onerror="this.replaceWith(this.alt)">           " alt="<image class="emoji" title="computer" alt="💻" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4bb.png?v8" style="vertical-align: middle;             max-width: 1em; visibility: hidden;" onload="this.style.visibility='visible'" onerror="this.replaceWith(this.alt)">           </image>" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4bb.png" height="20" width="20"&gt;.</li>
       <li>The best list of the supported emoji can be found in the <a href="https://www.fabriziomusacchio.com/blog/2021-08-16-emojis_for_Jekyll/#computer">Emojis for Jekyll via Jemoji</a> blog post.</li>
     </ul>
   </li>
@@ -368,26 +381,50 @@
 <table>
   <thead>
     <tr>
-      <th>Entry</th>
-      <th>Item</th>
-      <th> </th>
+      <th>
+<p>Entry</p>
+</th>
+      <th>
+<p>Item</p>
+</th>
+      <th>
+<p> </p>
+</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><a href="#">John Doe</a></td>
-      <td>2016</td>
-      <td>Description of the item in the list</td>
+      <td>
+<p>John Doe</p>
+</td>
+      <td>
+<p>2016</p>
+</td>
+      <td>
+<p>Description of the item in the list</p>
+</td>
     </tr>
     <tr>
-      <td><a href="#">Jane Doe</a></td>
-      <td>2019</td>
-      <td>Description of the item in the list</td>
+      <td>
+<p>Jane Doe</p>
+</td>
+      <td>
+<p>2019</p>
+</td>
+      <td>
+<p>Description of the item in the list</p>
+</td>
     </tr>
     <tr>
-      <td><a href="#">Doe Doe</a></td>
-      <td>2022</td>
-      <td>Description of the item in the list</td>
+      <td>
+<p>Doe Doe</p>
+</td>
+      <td>
+<p>2022</p>
+</td>
+      <td>
+<p>Description of the item in the list</p>
+</td>
     </tr>
   </tbody>
 </table>
@@ -397,45 +434,87 @@
 <table>
   <thead>
     <tr>
-      <th style="text-align: left">Header1</th>
-      <th style="text-align: center">Header2</th>
-      <th style="text-align: right">Header3</th>
+      <th style="text-align: left">
+<p>Header1</p>
+</th>
+      <th style="text-align: center">
+<p>Header2</p>
+</th>
+      <th style="text-align: right">
+<p>Header3</p>
+</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: left">cell1</td>
-      <td style="text-align: center">cell2</td>
-      <td style="text-align: right">cell3</td>
+      <td style="text-align: left">
+<p>cell1</p>
+</td>
+      <td style="text-align: center">
+<p>cell2</p>
+</td>
+      <td style="text-align: right">
+<p>cell3</p>
+</td>
     </tr>
     <tr>
-      <td style="text-align: left">cell4</td>
-      <td style="text-align: center">ce</td>
-      <td style="text-align: right"> </td>
+      <td style="text-align: left">
+<p>cell4</p>
+</td>
+      <td style="text-align: center">
+<p>ce</p>
+</td>
+      <td style="text-align: right">
+<p> </p>
+</td>
     </tr>
     <tr>
-      <td style="text-align: left">ll5</td>
-      <td style="text-align: center">cell6</td>
-      <td style="text-align: right"> </td>
+      <td style="text-align: left">
+<p>ll5</p>
+</td>
+      <td style="text-align: center">
+<p>cell6</p>
+</td>
+      <td style="text-align: right">
+<p> </p>
+</td>
     </tr>
   </tbody>
   <tbody>
     <tr>
-      <td style="text-align: left">cell1</td>
-      <td style="text-align: center">cell2</td>
-      <td style="text-align: right">cell3</td>
+      <td style="text-align: left">
+<p>cell1</p>
+</td>
+      <td style="text-align: center">
+<p>cell2</p>
+</td>
+      <td style="text-align: right">
+<p>cell3</p>
+</td>
     </tr>
     <tr>
-      <td style="text-align: left">cell4</td>
-      <td style="text-align: center">cell5</td>
-      <td style="text-align: right">cell6</td>
+      <td style="text-align: left">
+<p>cell4</p>
+</td>
+      <td style="text-align: center">
+<p>cell5</p>
+</td>
+      <td style="text-align: right">
+<p>cell6</p>
+</td>
     </tr>
   </tbody>
   <tfoot>
     <tr>
-      <td style="text-align: left">Foot1</td>
-      <td style="text-align: center">Foot2</td>
-      <td style="text-align: right">Foot3</td>
+      <td style="text-align: left">
+<p>Foot1</p>
+</td>
+      <td style="text-align: center">
+<p>Foot2</p>
+</td>
+      <td style="text-align: right">
+<p>Foot3</p>
+</td>
     </tr>
   </tfoot>
 </table>
@@ -706,7 +785,7 @@
 
 <div class="page__footer-copyright">
   © 2025 Lhuqita Fazry, Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br>
-  Site last updated 2025-05-11
+  Site last updated 2025-05-14
 </div>
 
       </footer>
@@ -723,4 +802,3 @@
 
   </body>
 </html>
-

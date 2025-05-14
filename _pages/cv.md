@@ -9,12 +9,14 @@ redirect_from:
 
 {% include base_path %}
 
+Download full CV [here](/assets/pdfs/Lhuqita_Fazry___Academic_Resume_2025.pdf)
+
 Education
 ======
-* **M.S. in Computer Science**, University of Indonesia, 2023. Graduated with honors (cum laude). Thesis: "Urban Change Detection from Satellite Imagery using Wavelet Transformer".
-* **B.S. in Mathematics**, University of Indonesia, 2008. Thesis: "Fractal Image Compression using Genetic Algorithm".
+* **Master in Computer Science**, University of Indonesia, 2023. Graduated with honors (cum laude). Thesis: "Urban Change Detection from Satellite Imagery using Wavelet Transformer".
+* **Bachelor in Mathematics**, University of Indonesia, 2008. Thesis: "Fractal Image Compression using Genetic Algorithm".
 
-Work experience
+Professional Experience
 ======
 * **2023 - current**: IT Trainer & Consultant
   * Conducted workshops and trainings on Generative AI, Deep Learning, REST API, Flutter Development

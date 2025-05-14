@@ -1,8 +1,7 @@
-
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" class="no-js">
   <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
 
 <meta charset="utf-8">
@@ -94,23 +93,34 @@
 <!-- start custom head snippets -->
 
 <!-- favicon from https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_academic-progressive.svg -->
-<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png"/>
-<link rel="icon" type="image/svg+xml" href="http://localhost:4000/images/favicon.svg"/>
-<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-32x32.png" sizes="32x32"/>
-<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-192x192.png" sizes="192x192"/>
-<link rel="manifest" href="http://localhost:4000/images/manifest.json"/>
-<link rel="icon" href="/images/favicon.ico"/>
-<meta name="theme-color" content="#ffffff"/>
-<link rel="stylesheet" href="http://localhost:4000/assets/css/academicons.css"/>
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/svg+xml" href="http://localhost:4000/images/favicon.svg">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-192x192.png" sizes="192x192">
+<link rel="manifest" href="http://localhost:4000/images/manifest.json">
+<link rel="icon" href="/images/favicon.ico">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/academicons.css">
 
 
 <!-- Support for MatJax -->
 <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
+<script type="text/javascript" id="MathJax-script">
+    window.MathJax = {
+        tex: {
+            inlineMath: [['\\(', '\\)'], ['$', '$']],
+            displayMath: [['\\[', '\\]'], ['$$', '$$']]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+</script>
 <!-- end custom head snippets -->
-
-  </head>
+  <script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">MathJax.Hub.Config({         tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] }       });</script>
+</head>
 
   <body>
 
@@ -135,6 +145,9 @@
           
             
             <li class="masthead__menu-item"><a href="http://localhost:4000/projects/">Projects</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/year-archive/">Blog Posts</a></li>
           
             
             <li class="masthead__menu-item"><a href="http://localhost:4000/cv/">CV</a></li>
@@ -183,10 +196,12 @@
     <ul class="author__urls social-icons">
       <!-- Font Awesome icons / Biographic information  -->
       
-        <li class="author__desktop"><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>Depok, Indonesia</li>
+        <li class="author__desktop">
+<i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>Depok, Indonesia</li>
       
       
-        <li class="author__desktop"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>University of Indonesia</li>
+        <li class="author__desktop">
+<i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>University of Indonesia</li>
       
       
       
@@ -197,7 +212,7 @@
       
             
       
-        <li><a href="https://scholar.google.com/citations?user=RiRDhuMAAAAJ&hl=en"><i class="ai ai-google-scholar icon-pad-right"></i>Google Scholar</a></li>
+        <li><a href="https://scholar.google.com/citations?user=RiRDhuMAAAAJ&amp;hl=en"><i class="ai ai-google-scholar icon-pad-right"></i>Google Scholar</a></li>
       
       
       
@@ -665,7 +680,7 @@
     </h2>
     
     <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> August 2024</p>
-    <p class="archive__item-excerpt" itemprop="description">talk, SMK Kesuma Bangsa 2 (High Vocational School),  Jakarta, Indonesia 
+    <p class="archive__item-excerpt" itemprop="description">talk, SMK Kesuma Bangsa 2 (High Vocational School),  Depok, West Java, Indonesia 
     <p class="archive__item-excerpt" itemprop="description"><p>Demonstrated license plate recognition using OpenCV and YOLO. This talk is held for final grade student of SMK Kesuma Bangsa 2 (High Vocational School) Jakarta.</p>
 
 </p>
@@ -1220,7 +1235,7 @@
     </h2>
     
     <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> August 2024</p>
-    <p class="archive__item-excerpt" itemprop="description">talk, SMK Kesuma Bangsa 2 (High Vocational School),  Jakarta, Indonesia 
+    <p class="archive__item-excerpt" itemprop="description">talk, SMK Kesuma Bangsa 2 (High Vocational School),  Depok, West Java, Indonesia 
     <p class="archive__item-excerpt" itemprop="description"><p>Demonstrated license plate recognition using OpenCV and YOLO. This talk is held for final grade student of SMK Kesuma Bangsa 2 (High Vocational School) Jakarta.</p>
 
 </p>
@@ -1262,7 +1277,7 @@
 
 
 
-<h2>Invited Talks and Workshops</h2>
+<h2>1. Invited Talks and Workshops</h2>
 
 <div class="talks-list">
   
@@ -1617,7 +1632,7 @@
   
 </div>
 
-<h2>Training Experience (as Trainer)</h2>
+<h2>2. Training Experience (as Trainer)</h2>
 
 <div class="talks-list">
   
@@ -1823,7 +1838,7 @@
     </div>
     <div class="talk-details">
       <h3 class="talk-title">
-        API Development with Go & Echo
+        API Development with Go &amp; Echo
         
         <span class="talk-role">DJKN - Ministry of Finance of the Republic of Indonesia</span>
         
@@ -2022,8 +2037,8 @@
 
 
 <div class="page__footer-copyright">
-  &copy; 2025 Lhuqita Fazry, Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
-  Site last updated 2025-05-11
+  © 2025 Lhuqita Fazry, Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br>
+  Site last updated 2025-05-14
 </div>
 
       </footer>
@@ -2040,4 +2055,3 @@
 
   </body>
 </html>
-

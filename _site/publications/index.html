@@ -1,8 +1,7 @@
-
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" class="no-js">
   <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
 
 <meta charset="utf-8">
@@ -94,23 +93,34 @@
 <!-- start custom head snippets -->
 
 <!-- favicon from https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_academic-progressive.svg -->
-<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png"/>
-<link rel="icon" type="image/svg+xml" href="http://localhost:4000/images/favicon.svg"/>
-<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-32x32.png" sizes="32x32"/>
-<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-192x192.png" sizes="192x192"/>
-<link rel="manifest" href="http://localhost:4000/images/manifest.json"/>
-<link rel="icon" href="/images/favicon.ico"/>
-<meta name="theme-color" content="#ffffff"/>
-<link rel="stylesheet" href="http://localhost:4000/assets/css/academicons.css"/>
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/svg+xml" href="http://localhost:4000/images/favicon.svg">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-192x192.png" sizes="192x192">
+<link rel="manifest" href="http://localhost:4000/images/manifest.json">
+<link rel="icon" href="/images/favicon.ico">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/academicons.css">
 
 
 <!-- Support for MatJax -->
 <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
+<script type="text/javascript" id="MathJax-script">
+    window.MathJax = {
+        tex: {
+            inlineMath: [['\\(', '\\)'], ['$', '$']],
+            displayMath: [['\\[', '\\]'], ['$$', '$$']]
+        },
+        svg: {
+            fontCache: 'global'
+        }
+    };
+</script>
 <!-- end custom head snippets -->
-
-  </head>
+  <script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">MathJax.Hub.Config({         tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] }       });</script>
+</head>
 
   <body>
 
@@ -135,6 +145,9 @@
           
             
             <li class="masthead__menu-item"><a href="http://localhost:4000/projects/">Projects</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/year-archive/">Blog Posts</a></li>
           
             
             <li class="masthead__menu-item"><a href="http://localhost:4000/cv/">CV</a></li>
@@ -181,10 +194,12 @@
     <ul class="author__urls social-icons">
       <!-- Font Awesome icons / Biographic information  -->
       
-        <li class="author__desktop"><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>Depok, Indonesia</li>
+        <li class="author__desktop">
+<i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>Depok, Indonesia</li>
       
       
-        <li class="author__desktop"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>University of Indonesia</li>
+        <li class="author__desktop">
+<i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>University of Indonesia</li>
       
       
       
@@ -195,7 +210,7 @@
       
             
       
-        <li><a href="https://scholar.google.com/citations?user=RiRDhuMAAAAJ&hl=en"><i class="ai ai-google-scholar icon-pad-right"></i>Google Scholar</a></li>
+        <li><a href="https://scholar.google.com/citations?user=RiRDhuMAAAAJ&amp;hl=en"><i class="ai ai-google-scholar icon-pad-right"></i>Google Scholar</a></li>
       
       
       
@@ -256,7 +271,7 @@
       <h1 class="page__title">Publications</h1>
     
     
-  <div class="wordwrap">You can also find my articles on <a href="https://scholar.google.com/citations?user=RiRDhuMAAAAJ&hl=en">my Google Scholar profile</a>.</div>
+  <div class="wordwrap">You can also find my articles on <a href="https://scholar.google.com/citations?user=RiRDhuMAAAAJ&amp;hl=en">my Google Scholar profile</a>.</div>
 
 
 
@@ -277,7 +292,8 @@
     
       
       
-        <h2>Journal Articles</h2><hr />
+        <h2>Journal Articles</h2>
+<hr>
         
       
       
@@ -304,12 +320,13 @@
         
 
     
-    <p class="archive__item-excerpt" itemprop="description"><p>LocalCD enhances change detection in remote sensing by integrating locality mechanisms into Vision Transformers through depth-wise convolutions, achieving superior F1-scores of 0.9548 (CDD) and 0.9243 (LEVIR-CD) while reducing segmentation artifacts.</p>
-</p>
+    <p class="archive__item-excerpt" itemprop="description"></p>
+<p>LocalCD enhances change detection in remote sensing by integrating locality mechanisms into Vision Transformers through depth-wise convolutions, achieving superior F1-scores of 0.9548 (CDD) and 0.9243 (LEVIR-CD) while reducing segmentation artifacts.</p>
+
     
     
     
-      <p>Recommended citation: L. Fazry, Mgs M Luthfi Ramadhan, and W. Jatmiko, “Improving Remote Sensing Change Detection Via Locality Induction on Feed-forward Vision Transformer”, Jurnal Ilmu Komputer dan Informasi, vol. 17, no. 1, pp. 37–48, Feb. 2024.<br /><a href="https://jiki.cs.ui.ac.id/index.php/jiki/article/view/1188">Download Paper</a></p>
+      <p>Recommended citation: L. Fazry, Mgs M Luthfi Ramadhan, and W. Jatmiko, “Improving Remote Sensing Change Detection Via Locality Induction on Feed-forward Vision Transformer”, Jurnal Ilmu Komputer dan Informasi, vol. 17, no. 1, pp. 37–48, Feb. 2024.<br><a href="https://jiki.cs.ui.ac.id/index.php/jiki/article/view/1188">Download Paper</a></p>
     
 
   </article>
@@ -342,12 +359,13 @@
         
 
     
-    <p class="archive__item-excerpt" itemprop="description"><p>FocalCD introduces an efficient focal modulation-based change detection method that outperforms CNN and Transformer approaches by capturing multi-scale interactions with lower computational complexity, achieving state-of-the-art results on major CD datasets.</p>
-</p>
+    <p class="archive__item-excerpt" itemprop="description"></p>
+<p>FocalCD introduces an efficient focal modulation-based change detection method that outperforms CNN and Transformer approaches by capturing multi-scale interactions with lower computational complexity, achieving state-of-the-art results on major CD datasets.</p>
+
     
     
     
-      <p>Recommended citation: L. Fazry, M. M. L. Ramadhan and W. Jatmiko, "Change Detection of High-Resolution Remote Sensing Images Through Adaptive Focal Modulation on Hierarchical Feature Maps," in IEEE Access, vol. 11, pp. 69072-69090, 2023, doi: 10.1109/ACCESS.2023.3292531<br /><a href="https://ieeexplore.ieee.org/document/10173482/">Download Paper</a></p>
+      <p>Recommended citation: L. Fazry, M. M. L. Ramadhan and W. Jatmiko, "Change Detection of High-Resolution Remote Sensing Images Through Adaptive Focal Modulation on Hierarchical Feature Maps," in IEEE Access, vol. 11, pp. 69072-69090, 2023, doi: 10.1109/ACCESS.2023.3292531<br><a href="https://ieeexplore.ieee.org/document/10173482/">Download Paper</a></p>
     
 
   </article>
@@ -365,7 +383,8 @@
         
       
       
-        <h2>Conference Papers</h2><hr />
+        <h2>Conference Papers</h2>
+<hr>
         
       
       
@@ -392,12 +411,13 @@
         
 
     
-    <p class="archive__item-excerpt" itemprop="description"><p>Our hierarchical vision Transformer method directly estimates left ventricular ejection fraction from echocardiogram videos without requiring segmentation, achieving superior performance (MAE: 5.59, RMSE: 7.59, R²: 0.59) compared to state-of-the-art approaches on the EchoNet-Dynamic dataset.</p>
-</p>
+    <p class="archive__item-excerpt" itemprop="description"></p>
+<p>Our hierarchical vision Transformer method directly estimates left ventricular ejection fraction from echocardiogram videos without requiring segmentation, achieving superior performance (MAE: 5.59, RMSE: 7.59, R²: 0.59) compared to state-of-the-art approaches on the EchoNet-Dynamic dataset.</p>
+
     
     
     
-      <p>Recommended citation: L. Fazry et al., "Hierarchical Vision Transformers for Cardiac Ejection Fraction Estimation," 2022 7th International Workshop on Big Data and Information Security (IWBIS), Depok, Indonesia, 2022, pp. 39-44, doi: 10.1109/IWBIS56557.2022.9924664.<br /><a href="http://academicpages.github.io/files/paper3.pdf">Download Paper</a></p>
+      <p>Recommended citation: L. Fazry et al., "Hierarchical Vision Transformers for Cardiac Ejection Fraction Estimation," 2022 7th International Workshop on Big Data and Information Security (IWBIS), Depok, Indonesia, 2022, pp. 39-44, doi: 10.1109/IWBIS56557.2022.9924664.<br><a href="http://academicpages.github.io/files/paper3.pdf">Download Paper</a></p>
     
 
   </article>
@@ -440,8 +460,8 @@
 
 
 <div class="page__footer-copyright">
-  &copy; 2025 Lhuqita Fazry, Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
-  Site last updated 2025-05-11
+  © 2025 Lhuqita Fazry, Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br>
+  Site last updated 2025-05-14
 </div>
 
       </footer>
@@ -458,4 +478,3 @@
 
   </body>
 </html>
-
