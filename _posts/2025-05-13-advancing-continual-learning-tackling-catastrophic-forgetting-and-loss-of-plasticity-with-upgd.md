@@ -2,6 +2,7 @@
 title: 'Advancing Continual Learning: Tackling Catastrophic Forgetting and Loss of Plasticity with UPGD'
 date: 2025-05-13
 permalink: /posts/2025/05/13/advancing-continual-learning-tackling-catastrophic-forgetting-and-loss-of-plasticity-with-upgd/
+image: /assets/post-thumbnails/2025-05-13-advancing-continual-learning-tackling-catastrophic-forgetting-and-loss-of-plasticity-with-upgd.jpg
 tags:
   - research
   - machine learning
