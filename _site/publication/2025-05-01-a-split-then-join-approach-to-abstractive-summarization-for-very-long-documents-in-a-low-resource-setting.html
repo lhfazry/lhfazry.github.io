@@ -294,6 +294,8 @@
       <section class="page__content" itemprop="text">
         <p>BIGBIRD-PEGASUS achieves state-of-the-art on abstractive text summarization for long documents. However it’s capacity still limited to maximum of 4,096 tokens, thus caused performance degradation on summarization for very long documents. Common method to deal with the issue is to truncate the documents. In this reasearch, we’ll use different approach. We’ll use the pretrained BIGBIRD-PEGASUS model by fine tuned the model on other domain dataset. First, we filter out all documents which length less than 20,000 tokens to focus on very long documents. To prevent domain shifting problem and overfitting on transfer learning due to small dataset, we augment the dataset by splitting document-summary training pair into parts, to fit the document into 4,096 tokens.</p>
 
+<p><a href="https://doi.org/10.48550/arXiv.2505.08190">Download paper</a></p>
+
 
         
 
@@ -377,7 +379,7 @@
 
 <div class="page__footer-copyright">
   &copy; 2025 Lhuqita Fazry, Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
-  Site last updated 2025-05-15
+  Site last updated 2025-05-16
 </div>
 
       </footer>
