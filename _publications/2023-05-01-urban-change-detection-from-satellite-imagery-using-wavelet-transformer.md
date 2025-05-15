@@ -5,7 +5,7 @@ category: books
 permalink: /publication/2023-05-01-urban-change-detection-from-satellite-imagery-using-wavelet-transformer
 excerpt: "Change detection is a remote sensing task for detecting a change from two satellite imagery in the same area while being taken at different times. Change detection is one of the most difficult remote sensing tasks because the change to be detected (real-change) is mixed with apparent changes (pseudo-change) due to differences in the two images, such as brightness, humidity, seasonal differences, etc."
 date: 2023-05-01
-venue: 'Faculty of Computer Science, University of Indonesia, 2023'
+venue: 'Faculty of Computer Science, University of Indonesia'
 slidesurl: #'http://academicpages.github.io/files/slides2.pdf'
 paperurl: #"https://lontar.ui.ac.id/detail?id=9999920532709"
 # citation: 'L. Fazry, Mgs M Luthfi Ramadhan, and W. Jatmiko, “Improving Remote Sensing Change Detection Via Locality Induction on Feed-forward Vision Transformer”, Jurnal Ilmu Komputer dan Informasi, vol. 17, no. 1, pp. 37–48, Feb. 2024.'
