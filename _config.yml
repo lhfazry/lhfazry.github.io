@@ -39,7 +39,7 @@ author:
   orcid            : "https://orcid.org/0009-0004-8494-9375"
   semantic         : # URL
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  researchgate     : # URL
+  researchgate     : https://www.researchgate.net/profile/Lhuqita-Fazry
   scopus           : # URL
 
   # Repositories and software development
